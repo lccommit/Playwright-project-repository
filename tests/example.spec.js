@@ -32,7 +32,7 @@ const passTestCases = [
   { id: 'Pass_20', input: 'api heta hamuwemu.', expected: 'අපි හෙට හමුවෙමු.' },
 
   { id: 'Pass_21', input: 'oyata bohoma sthuthi.', expected: 'ඔයාට බොහොම ස්තුති.' },
-  { id: 'Pass_22', input: 'mama honda wenna try karanavaa.', expected: 'මම හොඳ වෙන්න ට්‍රයි කරනවා.' },
+  { id: 'Pass_22', input: 'mama hoDHA venna try karanavaa.', expected: 'මම හොඳ වෙන්න ට්‍රයි කරනවා.' },
   { id: 'Pass_23', input: 'eka mata therenne nae.', expected: 'එක මට තේරෙන්නේ නැහැ.' },
   { id: 'Pass_24', input: 'oyaa mona wage kenekda?', expected: 'ඔයා මොන වගේ කෙනෙක්ද?' },
   { id: 'Pass_25', input: 'mama oyata kiyannam.', expected: 'මම ඔයාට කියන්නම්.' },
