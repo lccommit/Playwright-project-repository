@@ -8,40 +8,40 @@ const { test, expect } = require('@playwright/test');
 
 // ---------- PASS CASES (30) ----------
 const passTestCases = [
-  { id: 'Pass_01', input: 'ayubovan!', expected: 'ආයුබෝවන්!' },
-  { id: 'Pass_02', input: 'mama yanavaa.', expected: 'මම යනවා.' },
-  { id: 'Pass_03', input: 'oyaa kohomadha?', expected: 'ඔයා කොහොමද?' },
-  { id: 'Pass_04', input: 'suba upandhinayak veevaa!', expected: 'සුබ උපන්දිනයක් වේවා!' },
-  { id: 'Pass_05', input: 'oba monawadha karanne?', expected: 'ඔබ මොනවද කරන්නේ?' },
-  { id: 'Pass_06', input: 'mama honda innavaa.', expected: 'මම හොඳ ඉන්නවා.' },
-  { id: 'Pass_07', input: 'oyaa hari lassanai.', expected: 'ඔයා හරි ලස්සනයි.' },
-  { id: 'Pass_08', input: 'mata bath kanna ona.', expected: 'මට බත් කන්න ඕන.' },
-  { id: 'Pass_09', input: 'api school yanavaa.', expected: 'අපි ස්කූල් යනවා.' },
-  { id: 'Pass_10', input: 'eka hari lassanai.', expected: 'එක හරි ලස්සනයි.' },
+  { id: 'Pass_01', input: 'mama gedhara yanavaa.', expected: 'මම ගෙදර යනවා.' },
+  { id: 'Pass_02', input: 'mata bath oonee.', expected: 'මට බත් ඕනේ.' },
+  { id: 'Pass_03', input: 'api paasal yanavaa.', expected: 'අපි පාසල් යනවා.' },
+  { id: 'Pass_04', input: 'mata nidhimathayi.', expected: 'මට නිදිමතයි.' },
+  { id: 'Pass_05', input: 'dhaen vahinavaa.', expected: 'දැන් වහිනවා.' },
+  { id: 'Pass_06', input: 'api passe kathaa karamu.', expected: 'අපි පස්සෙ කතා කරමු.' },
+  { id: 'Pass_07', input: 'oyaata kohomadha?', expected: 'ඔයාට කොහොමද?' },
+  { id: 'Pass_08', input: 'oyaa kavadhdha enna hithan inne?.', expected: 'ඔයා කවද්ද එන්න හිතන් ඉන්නේ?' },
+  { id: 'Pass_09', input: 'vahaama enna.', expected: 'වහාම එන්න.' },
+  { id: 'Pass_10', input: 'issarahata yanna.', expected: 'ඉස්සරහට යන්න.' },
 
-  { id: 'Pass_11', input: 'oyaa gedhara innavada?', expected: 'ඔයා ගෙදර ඉන්නවද?' },
-  { id: 'Pass_12', input: 'mama weda karanavaa.', expected: 'මම වැඩ කරනවා.' },
-  { id: 'Pass_13', input: 'api kattiya enavaa.', expected: 'අපි කට්ටිය එනවා.' },
-  { id: 'Pass_14', input: 'mata salli nae.', expected: 'මට සල්ලි නැහැ.' },
-  { id: 'Pass_15', input: 'oya kawadha enne?', expected: 'ඔයා කවදා එන්නේ?' },
+  { id: 'Pass_11', input: 'mama iiyee gedhara giyaa.', expected: 'මම ඊයේ ගෙදර ගියා.' },
+  { id: 'Pass_12', input: 'mama heta enavaa.', expected: 'මම හෙට එනවා.' },
+  { id: 'Pass_13', input: 'mama dhannee naee.', expected: 'මම දන්නේ නෑ.' },
+  { id: 'Pass_14', input: 'mata eeka epaa.', expected: 'මට ඒක එපා.' },
+  { id: 'Pass_15', input: 'Zoom meeting ekak thiyennee.', expected: 'Zoom meeting එකක් තියෙන්නේ.' },
 
-  { id: 'Pass_16', input: 'suba dawasak!', expected: 'සුබ දවසක්!' },
-  { id: 'Pass_17', input: 'oya hari honda lamayek.', expected: 'ඔයා හරි හොඳ ළමයෙක්.' },
-  { id: 'Pass_18', input: 'mama oyata adarei.', expected: 'මම ඔයාට ආදරෙයි.' },
-  { id: 'Pass_19', input: 'eka loku deyak.', expected: 'එක ලොකු දෙයක්.' },
-  { id: 'Pass_20', input: 'api heta hamuwemu.', expected: 'අපි හෙට හමුවෙමු.' },
+  { id: 'Pass_16', input: 'Documents tika attach karalaa mata email ekak evanna.', expected: 'Documents ටික attach කරලා මට email එකක් එවන්න.' },
+  { id: 'Pass_17', input: 'Teams meeting ekee link eka WhatsApp karanna puLuvandha?', expected: 'Teams meeting එකේ link එක WhatsApp කරන්න පුළුවන්ද?' },
+  { id: 'Pass_18', input: 'mata WiFi naehae.', expected: 'මට WiFi නැහැ.' },
+  { id: 'Pass_19', input: 'Rs. 2500 ganna thiyenavaa.', expected: 'Rs. 2500 ගන්න තියෙනවා.' },
+  { id: 'Pass_20', input: '7.30 AM office yanna oonee.', expected: '7.30 AM office යන්න ඕනේ.' },
 
-  { id: 'Pass_21', input: 'oyata bohoma sthuthi.', expected: 'ඔයාට බොහොම ස්තුති.' },
-  { id: 'Pass_22', input: 'mama hoDHA venna try karanavaa.', expected: 'මම හොඳ වෙන්න ට්‍රයි කරනවා.' },
-  { id: 'Pass_23', input: 'eka mata therenne nae.', expected: 'එක මට තේරෙන්නේ නැහැ.' },
-  { id: 'Pass_24', input: 'oyaa mona wage kenekda?', expected: 'ඔයා මොන වගේ කෙනෙක්ද?' },
-  { id: 'Pass_25', input: 'mama oyata kiyannam.', expected: 'මම ඔයාට කියන්නම්.' },
+  { id: 'Pass_21', input: '2026-05-21 meeting eka thiyenavaa.', expected: '2026-05-21 meeting එක තියෙනවා.' },
+  { id: 'Pass_22', input: 'mama gedhara   yanavaa.', expected: 'මම ගෙදර   යනවා.' },
+  { id: 'Pass_23', input: 'dhitvaa suLi kunaatuva samaga aethi vuu gQQvathura saha naayayaeem heethuven maarga sQQvarDhana aDhikaariya…', expected: 'දිට්වා සුළි කුනාටුව සමග ඇති වූ ගංවතුර සහ නායයෑම් හේතුවෙන් මාර්ග සංවර්ධන අධිකාරිය…' },
+  { id: 'Pass_24', input: 'ela machan, mama office late vennee traffic nisaa.', expected: 'එල මචන්, මම office late වෙන්නේ traffic නිසා.' },
+  { id: 'Pass_25', input: 'mama oyaata kiyannam.', expected: 'මම ඔයාට කියන්නම්.' },
 
-  { id: 'Pass_26', input: 'oyaa hari hondatama karanavaa.', expected: 'ඔයා හරි හොඳටම කරනවා.' },
-  { id: 'Pass_27', input: 'api loku deyakata yamu.', expected: 'අපි ලොකු දෙයකට යමු.' },
-  { id: 'Pass_28', input: 'mata oyage adahas ona.', expected: 'මට ඔයාගේ අදහස් ඕන.' },
-  { id: 'Pass_29', input: 'oyaa monawadha hithanne?', expected: 'ඔයා මොනවද හිතන්නේ?' },
-  { id: 'Pass_30', input: 'mama oyata hari kemathi.', expected: 'මම ඔයාට හරි කැමති.' }
+  { id: 'Pass_26', input: 'oyaa hari hoDHAtama karanavaa.', expected: 'ඔයා හරි හොඳටම කරනවා.' },
+  { id: 'Pass_27', input: 'api loku dheyakata yamu.', expected: 'අපි ලොකු දෙයකට යමු.' },
+  { id: 'Pass_28', input: 'mata oyaagee adhahas oona.', expected: 'මට ඔයාගේ අදහස් ඕන.' },
+  { id: 'Pass_29', input: 'oyaa monavadha hithannee?', expected: 'ඔයා මොනවද හිතන්නේ?' },
+  { id: 'Pass_30', input: 'mama oyaata hari kaemathi.', expected: 'මම ඔයාට හරි කැමති.' }
 ];
 
 // ---------- FAIL CASES (15) ----------
@@ -79,7 +79,7 @@ test.describe('Singlish → Sinhala Transliteration', () => {
 
   // ---------- PASS TESTS ----------
   for (const data of passTestCases) {
-    test(`✅ ${data.id} | ${data.input}`, async ({ page }) => {
+    test(` ${data.id} | ${data.input}`, async ({ page }) => {
       const inputArea = page.locator('textarea[placeholder="Input Your Singlish Text Here."]');
       const outputArea = page
         .locator('.card', { hasText: 'Sinhala' })
@@ -98,7 +98,7 @@ test.describe('Singlish → Sinhala Transliteration', () => {
 
   // ---------- FAIL TESTS ----------
   for (const data of failTestCases) {
-    test(`❌ ${data.id} | ${data.input}`, async ({ page }) => {
+    test(` ${data.id} | ${data.input}`, async ({ page }) => {
       const inputArea = page.locator('textarea[placeholder="Input Your Singlish Text Here."]');
       const outputArea = page
         .locator('.card', { hasText: 'Sinhala' })
